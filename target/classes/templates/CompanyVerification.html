@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:v="urn:schemas-microsoft-com:vml"
+      xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+<body>
+<table style="width: 100%; max-width: 850px; margin: 20px auto 50px; background: #f0f6f8; font-size: 1.1rem; color: #3b3b3b; font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, Roboto; border-radius: 12px;">
+    <tbody>
+    <tr>
+        <td align="center" style="padding: 20px;">
+            <h1>OTP</h1>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 20px;">
+            <!-- <p>Dear [[${employeeName}]],</p>
+            <p>We are excited to welcome you to our team at [[${companyName}]]. Your journey with us starts now, and we're thrilled to have you on board!</p>
+            <p>Here are a form to get you started:</p>
+            </br><a th:href="${url}">Onboard Employee Form</a> -->
+            <h4 style="text-align: left">Dear [[${Company}]] Team,</h4>
+
+            <h4>To ensure the security and verification of your account, we have generated a One-Time Password (OTP) for your use.</h4>
+            <h4>OTP Code: [[${OTP}]]</h4>
+
+            <h4>For your account security, please do not share this OTP with anyone, and refrain from disclosing it over the phone, email, or any other electronic communication channel.</h4>
+
+            <h4>Best regards,</h4>
+            <h4>Team-Megalog</h4>
+            <!-- <ul>
+                <li>Your Employee ID: [[${employeeID}]]</li>
+                <li>Your Email: [[${email}]]</li>
+                <li>Your Manager: [[${managerName}]]</li>
+            </ul> -->
+            <!--  <p>Please find attached your offer letter for your reference.</p>
+             <p>If you have any questions, feel free to reach out to [[${hrContactName}]] at [[${hrContactEmail}]].</p>
+             <p>We're looking forward to achieving great things together!</p>
+             <p>Best regards,<br>[[${yourName}]]<br>[[${yourTitle}]]<br>[[${companyName}]]</p> -->
+        </td>
+    </tr>
+    <!-- <tr>
+        <td style="padding: 3rem; padding-bottom: 0px;">
+             Thank you for your interest in our Organisations.
+             </br>
+            </br><a th:href="${url}">Onboard Employee Form</a>
+             </br>
+             <p>Please do not hesitate to contact us for any additional information/ clarification.</p>
+             <p><img width="16px" src="cid:emailLogo"/> sales@caeliusconsulting.com</p>
+             <p><img width="16px" src="cid:phoneLogo"/> +1 972 370 3073</p>
+        </td>
+    </tr> -->
+    <tr>
+        <td align="center" style="padding: 20px;">
+            <p>This is an automated message. Please do not reply to this email.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 1.5rem 3rem; text-align: center;">
+            <hr> <img
+                src="https://megalogsoftwares.com/assets/img/Megalog-logo.png"
+                width="130" style="margin: 40px auto 0px;">
+            <p
+                    style="font-size: 13px; color: #979c9e; display: table; margin: 30px auto;">
+                <span
+                        style="display: table-cell; width: 180px; text-align: center; padding: 0 15px;">
+							<span style="display: inline-table;">India</span> <span
+                        style="display: inline-table;">D-185, Phase 8B,
+Industrial Area, SAS Nagar
+Punjab, India.</span>
+						</span>
+
+            </p>
+            <p style="margin: 15px 0; font-size: 13px; color: #979c9e;">
+                <a href="https://www.linkedin.com/company/megalogsoftwares/">LinkedIn
+                    &nbsp;</a> &nbsp; | &nbsp; <a href="https://megalogsoftwares.com/">Megalog Softwares&nbsp;</a> &nbsp; | &nbsp; <a href="tel:+91 172 4192419">+91
+                7681 944 585</a>
+            </p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

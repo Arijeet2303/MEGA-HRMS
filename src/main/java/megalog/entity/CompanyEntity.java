@@ -1,9 +1,13 @@
-package entity;
+package megalog.entity;
 
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.List;
 
 @Setter
 @Getter
@@ -19,18 +23,35 @@ public class CompanyEntity extends Auditable implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long businessId;
 
+    @NotNull
+    @NotBlank
     private String businessName;
 
+    @Email(message = "email required")
+    @NotNull
+    @NotBlank
     private String businessEmail;
 
+    @NotNull
+    @NotBlank
     private String businessPhone;
 
+    @NotNull
+    @NotBlank
     private String totalEmployee;
 
+    @NotNull
+    @NotBlank
     private String businessType;
 
+    @NotNull
+    @NotBlank
     private String password;
 
-    private int emailVerificationStatus;
+    private String emailVerificationStatus;
 
+    private String profileStatus;
+
+    public CompanyEntity(Long id, String email, List<String> roles) {
+    }
 }

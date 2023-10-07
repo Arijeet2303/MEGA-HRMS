@@ -1,4 +1,4 @@
-package entity;
+package megalog.entity;
 
 import lombok.Data;
 
